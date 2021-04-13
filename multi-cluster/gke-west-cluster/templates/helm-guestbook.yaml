@@ -15,8 +15,8 @@ spec:
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
     helm:
-    valueFiles:
-      - values-production.yaml
+      valueFiles:
+        - values-production.yaml
   syncPolicy:
     automated:
       selfHeal: true
